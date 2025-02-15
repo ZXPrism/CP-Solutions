@@ -8,4 +8,5 @@ build
 out
 bits
 .cph
-placeholder.cpp
+mt_placeholder.cpp
+sig_placeholder.cpp
