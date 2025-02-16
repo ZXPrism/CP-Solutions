@@ -10,27 +10,25 @@ void solve() {
     std::string s;
     std::cin >> s;
 
-    std::vector<int> v;
+    std::vector<int> x;
     for (int i = 0; i < n; i++) {
         if (s[i] == '1') {
-            v.push_back(i);
+            x.push_back(i);
         }
     }
-    int nv = v.size();
+
+    std::sort(x.rbegin(), x.rend());
 
     auto check = [&](int k) -> bool {
-        for (int left = nv - k, right = 0; right < n; right++) {
-            if (right == v[left]) {
-                if (right - 2 * (left - (nv - k)) < 1) {
-                    return false;
-                }
-                ++left;
+        for (int i = 0; i < k; i++) {
+            if (x[i] - 2 * (k - i - 1) <= 0) {
+                return false;
             }
         }
         return true;
     };
 
-    int left = -1, right = v.size() + 1, mid = 0;
+    int left = -1, right = x.size() + 1, mid = 0;
     while (left + 1 < right) {
         mid = (left + right) / 2;
         if (check(mid)) {
@@ -41,8 +39,8 @@ void solve() {
     }
 
     i64 ans = 1LL * (1 + n) * n / 2;
-    for (int i = nv - left; i < nv; i++) {
-        ans -= (v[i] + 1);
+    for (int i = 0; i < left; i++) {
+        ans -= (x[i] + 1);
     }
 
     std::cout << ans << '\n';
