@@ -7,6 +7,6 @@ target("default")
     set_kind("binary")
     set_warnings("all", "error")
 
-    add_files("*.cpp")
+    add_files("**.cpp")
     add_includedirs(".")
 target_end()
