@@ -10,5 +10,5 @@ bits
 .cph
 mt_placeholder.cpp
 sig_placeholder.cpp
-solve.cpp
+solve.*
 progress
