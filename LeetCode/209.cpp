@@ -4,7 +4,7 @@ public:
         int n = nums.size(), ans = n + 1, sum = 0;
         for (int left = 0, right = 0; right < n; right++) {
             sum += nums[right];
-            while (left <= right && sum >= target) {
+            while (sum >= target) {
                 ans = std::min(ans, right - left + 1);
                 sum -= nums[left++];
             }
