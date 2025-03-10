@@ -1,5 +1,6 @@
-import sys
+import sys, heapq
 from bisect import *
+from collections import deque
 
 input = sys.stdin.readline
 
