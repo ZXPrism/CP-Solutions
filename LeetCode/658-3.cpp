@@ -6,3 +6,23 @@
 
 // problem: this function is not monotonic, there could be identical elements!
 // so we have to make it unique before performing binary search? this would be inefficient!
+// 25-02-22
+
+// solved in 25-03-15! with a bit guess though.
+
+class Solution {
+public:
+    vector<int> findClosestElements(vector<int> &arr, int k, int x) {
+        int n = arr.size();
+        int left = -1, right = n - k, mid = 0;
+        while (left + 1 < right) {
+            mid = (left + right) >> 1;
+            if (x - arr[mid] <= arr[mid + k] - x) {
+                right = mid;
+            } else {
+                left = mid;
+            }
+        }
+        return std::vector<int>(arr.begin() + right, arr.begin() + right + k);
+    }
+};
