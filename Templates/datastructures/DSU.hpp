@@ -1,6 +1,3 @@
-#pragma once
-#include <bits/stdc++.h>
-
 class DSU {
 public:
     explicit DSU(size_t n) {
