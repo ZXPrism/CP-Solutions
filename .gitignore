@@ -13,3 +13,9 @@ sig_placeholder.cpp
 solve.*
 progress
 out.txt
+src
+*.pdb
+Cargo.*
+
+# Added by cargo
+/target
