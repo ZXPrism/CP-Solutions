@@ -5,6 +5,9 @@ This repository holds all my CP (Competitive Programming) solutions since `2025.
 - How to solve problems
   - think rigorously, never make uncertain assumption and believe your own intuition
   - plus some love
+  - two main approaches to find clues (take CF1921F as an example)
+    - playing with the example then generalize
+    - write the exact formula and transform it
 - Binary Search
   - just an optimization tool, think about linear version first
   - on indexes -> explicit
