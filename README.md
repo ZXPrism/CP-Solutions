@@ -8,6 +8,9 @@ This repository holds all my CP (Competitive Programming) solutions since `2025.
   - two main approaches to find clues (take CF1921F as an example)
     - playing with the example then generalize
     - write the exact formula and transform it (prefer a compact form since multple terms clutter your thinking)
+  - even if you have the right idea, you may implement it in the wrong way, like
+    - treating stepped indices as global indices --> should divide by step
+    - ...
 - Binary Search
   - just an optimization tool, think about linear version first
   - on indexes -> explicit
