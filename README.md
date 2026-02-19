@@ -7,7 +7,7 @@ This repository holds all my CP (Competitive Programming) solutions since `2025.
   - plus some love
   - two main approaches to find clues (take CF1921F as an example)
     - playing with the example then generalize
-    - write the exact formula and transform it
+    - write the exact formula and transform it (prefer a compact form since multple terms clutter your thinking)
 - Binary Search
   - just an optimization tool, think about linear version first
   - on indexes -> explicit
