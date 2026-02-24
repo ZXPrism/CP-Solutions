@@ -19,3 +19,5 @@ This repository holds all my CP (Competitive Programming) solutions since `2025.
     - so don't be afraid when the candidate is invalid, as the algorithm will "auto" snaps the candidate to a valid one
 - Sqrt Decomposition
   - find an equilibrium between multiple stretegies
+- Find maximum/minimum etc.
+  - if you can not directly (or hard to) tell which one is the maximum, can you enumerate all possible candidates and manually compute the maximum?
