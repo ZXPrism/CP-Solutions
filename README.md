@@ -11,6 +11,7 @@ This repository holds all my CP (Competitive Programming) solutions since `2025.
   - even if you have the right idea, you may implement it in the wrong way, like
     - treating stepped indices as global indices --> should divide by step
     - ...
+  - sometimes the answer is quite limited that you can even enumerate them!
 - Binary Search
   - just an optimization tool, think about linear version first
   - on indexes -> explicit
