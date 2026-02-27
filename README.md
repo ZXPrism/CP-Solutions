@@ -22,3 +22,5 @@ This repository holds all my CP (Competitive Programming) solutions since `2025.
   - find an equilibrium between multiple stretegies
 - Find maximum/minimum etc.
   - if you can not directly (or hard to) tell which one is the maximum, can you enumerate all possible candidates and manually compute the maximum?
+- Problems about bits / lexicographics
+  - One digit in higher position outweighs any digit combination in lower position ---> leads to some greedy construction methods
